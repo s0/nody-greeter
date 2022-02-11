@@ -2,7 +2,6 @@ name: ESLint and Prettier
 
 on:
   push:
-    branches: [ master ]
     paths:
         # rerun when typescript files change
       - "ts/**"
@@ -11,8 +10,7 @@ on:
         # rerun when packages change
       - "package.json"
       - "package-lock.json"
-  pull_request:
-    branches: [ master ]
+  pull_request: {}
   workflow_dispatch:
 
 jobs:
