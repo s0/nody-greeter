@@ -4,7 +4,7 @@ import * as fs from "fs";
 import * as io_ts from "io-ts";
 import * as yaml from "js-yaml";
 import * as path from "path";
-import { logger } from "./logger";
+import { logger } from "./logge";
 
 export const WEB_GREETER_CONFIG = io_ts.type({
   branding: io_ts.type({
